@@ -1,12 +1,15 @@
 const createMemory = require('./create-memory')
 const CPU = require('./cpu')
 const instructions = require('./instructions')
-let readline = require('readline')
+// node
+const readline = require('readline')
+// browser
+// const readline = require("readline-browser");
 
-if (readline.createInterface == undefined){
-  // https://stackoverflow.com/questions/71814859/typeerror-readline-createinterface-is-not-a-function
-  readline = readline.default
-}
+// if (readline.createInterface == undefined){
+//   // https://stackoverflow.com/questions/71814859/typeerror-readline-createinterface-is-not-a-function
+//   readline = readline.default
+// }
 
 
 const IP = 0, ACC = 1, R1 = 2, R2 = 3
